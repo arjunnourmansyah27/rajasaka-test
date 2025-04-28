@@ -57,7 +57,11 @@ li {
 a {
   text-decoration: none;
 }
-/*-- slsai--*/
+
+/* header */
+header {
+  background-color: #21201e;
+}
 
 .main-container {
   width: 1200px;
@@ -107,6 +111,11 @@ a {
 }
 
 /* --- Logo dan Navigasi Menu --- */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+}
+
 .nav {
   background-color: #21201e;
   position: fixed;
@@ -195,6 +204,11 @@ nav ul li a:hover::after {
 }
 
 /* Hero Foto Di Home*/
+.hero-text {
+  font-size: 24px;
+  color: #ffff;
+}
+
 #hero {
   height: 720px;
   display: grid;
@@ -668,9 +682,28 @@ footer {
   background-color: #cca741;
   border-radius: 10px;
   padding: 12px;
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
 }
 
 .btn-white {
   color: #ffffff;
   font-weight: bold;
+}
+
+.whatsapp-logo {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 1000;
+}
+
+
+.swiper-slide {
+  transform: scale(0.9);
+  transition: transform 0.4s ease;
+}
+.swiper-slide-active {
+  transform: scale(1);
 }
